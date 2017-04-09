@@ -41,9 +41,9 @@ public static void main(String[] args) throws Exception
 		}
 		//create an instance of job
 		Job job = new Job(conf, "television");
-		job.setJarByClass(ps1main.class);
-		job.setMapperClass(ps1mapper.class);
-		job.setReducerClass(ps1reducer.class); 
+		job.setJarByClass(PS2Main.class);
+		job.setMapperClass(PS2Mapper.class);
+		job.setReducerClass(PS2Reducer.class); 
 		
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(Text.class);
