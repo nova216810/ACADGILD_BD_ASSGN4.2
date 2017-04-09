@@ -33,7 +33,7 @@ public static void main(String[] args) throws Exception
 		    System.err.println("Usage: Seq File Example <input file> <output dir>");
 		    System.out.println("Using default file: seqfile");
 		    inPath = "/user/acadgild/television";
-			  outPath = "/user/acadgild/validtv";
+		    outPath = "/user/acadgild/validtv";
 		}
 		else
 		 {
@@ -42,9 +42,9 @@ public static void main(String[] args) throws Exception
 		}
 		//create an instance of job
 		Job job = new Job(conf, "television");
-		job.setJarByClass(ps1main.class);
-		job.setMapperClass(ps1mapper.class);
-		job.setReducerClass(ps1reducer.class); 
+		job.setJarByClass(PS3Main.class);
+		job.setMapperClass(PS3Mapper.class);
+		job.setReducerClass(PS3Reducer.class); 
 		
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(Text.class);
